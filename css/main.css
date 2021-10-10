@@ -1,0 +1,1074 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+
+.goToTop {
+  width: 40px;
+  height: 40px;
+  background-color: #0078ff;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  position: fixed;
+  z-index: 10;
+  bottom: 10px;
+  right: 10px;
+  -webkit-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.goToTop:hover {
+  background-color: #3192ff;
+}
+.goToTop:hover span {
+  color: #fff;
+}
+.goToTopCont {
+  margin: auto;
+  width: 50%;
+}
+.goToTopCont span {
+  width: 100%;
+  -webkit-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+/*             ***                Home Section                ***            */
+header {
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url(../images/intro-bg.jpg);
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.5)),
+      to(rgba(0, 0, 0, 0.6))
+    ),
+    url(../images/intro-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url(../images/intro-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+/* NavBar  */
+
+.DROP-LIST {
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  position: relative;
+  margin-left: 20px;
+}
+.DROP-LIST:hover .DROP-UL {
+  display: block;
+  margin-top: 0;
+}
+
+.DEEP-DROP-LIST:hover .DEEP-DROP-UL {
+  display: block;
+  margin-right: 0px;
+}
+.DEEP-DROP-LIST {
+  position: relative;
+}
+.DEEP-DROP-UL {
+  position: absolute;
+  top: 0;
+  right: 180px;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.DROP-A::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 2px;
+  width: 0;
+  top: 90%;
+  left: 5px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.DROP-A:hover::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 2px;
+  width: 80%;
+  top: 90%;
+  left: 5px;
+}
+.activeLink {
+  position: relative;
+  margin-left: 20px;
+}
+.activeLink a:after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 2px;
+  width: 80%;
+  top: 90%;
+  left: 5px;
+}
+
+.linkBorder {
+  position: relative;
+  margin-left: 20px;
+}
+.linkBorder a:after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 2px;
+  width: 0;
+  top: 90%;
+  left: 5px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.linkBorder a:hover:after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 2px;
+  width: 80%;
+  top: 90%;
+  left: 5px;
+}
+nav a {
+  font-weight: 500;
+}
+.navbar-brand {
+  font-size: 2rem;
+}
+/* Home  */
+h1 {
+  color: #fff;
+  font-size: 4.5rem;
+}
+#home h5 {
+  color: #fff;
+  font-size: 3rem;
+}
+#home h5::before {
+  content: "";
+
+  -webkit-animation-name: typing;
+
+  animation-name: typing;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes typing {
+  0% {
+    content: "";
+  }
+  1% {
+    content: "F";
+  }
+  2% {
+    content: "Fr";
+  }
+  3% {
+    content: "Fre";
+  }
+  4% {
+    content: "Free";
+  }
+  5% {
+    content: "Freel";
+  }
+  6% {
+    content: "Freela";
+  }
+  7% {
+    content: "Freelan";
+  }
+  8% {
+    content: "Freelanc";
+  }
+  9% {
+    content: "Freelance";
+  }
+  10% {
+    content: "Freelancer";
+  }
+  11% {
+    content: "Freelancer";
+  }
+  16% {
+    content: "Freelancer";
+  }
+  17% {
+    content: "Freelance";
+  }
+  18% {
+    content: "Freelanc";
+  }
+  19% {
+    content: "Freelan";
+  }
+  20% {
+    content: "Freela";
+  }
+  21% {
+    content: "Freel";
+  }
+  22% {
+    content: "Free";
+  }
+  23% {
+    content: "Fre";
+  }
+  24% {
+    content: "Fr";
+  }
+  25% {
+    content: "F";
+  }
+  26% {
+    content: "";
+  }
+  27% {
+    content: "P";
+  }
+  28% {
+    content: "Ph";
+  }
+  29% {
+    content: "Pho";
+  }
+  30% {
+    content: "Phot";
+  }
+  31% {
+    content: "Photo";
+  }
+  32% {
+    content: "Photog";
+  }
+  33% {
+    content: "Photogr";
+  }
+  34% {
+    content: "Photogra";
+  }
+  35% {
+    content: "Photograp";
+  }
+  36% {
+    content: "Photograph";
+  }
+  37% {
+    content: "Photographe";
+  }
+  38% {
+    content: "Photographer";
+  }
+  39% {
+    content: "Photographer";
+  }
+  44% {
+    content: "Photographer";
+  }
+  45% {
+    content: "Photographe";
+  }
+  46% {
+    content: "Photograph";
+  }
+  47% {
+    content: "Photograp";
+  }
+  48% {
+    content: "Photogra";
+  }
+  49% {
+    content: "Photogr";
+  }
+  50% {
+    content: "Photog";
+  }
+  51% {
+    content: "Photo";
+  }
+  52% {
+    content: "Phot";
+  }
+  53% {
+    content: "Pho";
+  }
+  54% {
+    content: "Ph";
+  }
+  55% {
+    content: "P";
+  }
+  56% {
+    content: "";
+  }
+  57% {
+    content: "D";
+  }
+  58% {
+    content: "De";
+  }
+  59% {
+    content: "Des";
+  }
+  60% {
+    content: "Desi";
+  }
+  61% {
+    content: "Desig";
+  }
+  62% {
+    content: "Design";
+  }
+  63% {
+    content: "Designe";
+  }
+  64% {
+    content: "Dersigner";
+  }
+  65% {
+    content: "Dersigner";
+  }
+  70% {
+    content: "Dersigner";
+  }
+  71% {
+    content: "Dersigne";
+  }
+  72% {
+    content: "Dersign";
+  }
+  73% {
+    content: "Dersig";
+  }
+  74% {
+    content: "Dersi";
+  }
+  75% {
+    content: "Ders";
+  }
+  76% {
+    content: "Der";
+  }
+  77% {
+    content: "De";
+  }
+  78% {
+    content: "Dev";
+  }
+  79% {
+    content: "Deve";
+  }
+  80% {
+    content: "Devel";
+  }
+  81% {
+    content: "Develo";
+  }
+  82% {
+    content: "Develop";
+  }
+  83% {
+    content: "Develope";
+  }
+  84% {
+    content: "Developer";
+  }
+  85% {
+    content: "Developer";
+  }
+  90% {
+    content: "Developer";
+  }
+  91% {
+    content: "Develope";
+  }
+  92% {
+    content: "Develop";
+  }
+  93% {
+    content: "Develo";
+  }
+  94% {
+    content: "Devel";
+  }
+  95% {
+    content: "Deve";
+  }
+  96% {
+    content: "Dev";
+  }
+  97% {
+    content: "De";
+  }
+  98% {
+    content: "D";
+  }
+  99% {
+    content: "";
+  }
+
+  100% {
+    content: "";
+  }
+}
+@keyframes typing {
+  0% {
+    content: "";
+  }
+  1% {
+    content: "F";
+  }
+  2% {
+    content: "Fr";
+  }
+  3% {
+    content: "Fre";
+  }
+  4% {
+    content: "Free";
+  }
+  5% {
+    content: "Freel";
+  }
+  6% {
+    content: "Freela";
+  }
+  7% {
+    content: "Freelan";
+  }
+  8% {
+    content: "Freelanc";
+  }
+  9% {
+    content: "Freelance";
+  }
+  10% {
+    content: "Freelancer";
+  }
+  11% {
+    content: "Freelancer";
+  }
+  16% {
+    content: "Freelancer";
+  }
+  17% {
+    content: "Freelance";
+  }
+  18% {
+    content: "Freelanc";
+  }
+  19% {
+    content: "Freelan";
+  }
+  20% {
+    content: "Freela";
+  }
+  21% {
+    content: "Freel";
+  }
+  22% {
+    content: "Free";
+  }
+  23% {
+    content: "Fre";
+  }
+  24% {
+    content: "Fr";
+  }
+  25% {
+    content: "F";
+  }
+  26% {
+    content: "";
+  }
+  27% {
+    content: "P";
+  }
+  28% {
+    content: "Ph";
+  }
+  29% {
+    content: "Pho";
+  }
+  30% {
+    content: "Phot";
+  }
+  31% {
+    content: "Photo";
+  }
+  32% {
+    content: "Photog";
+  }
+  33% {
+    content: "Photogr";
+  }
+  34% {
+    content: "Photogra";
+  }
+  35% {
+    content: "Photograp";
+  }
+  36% {
+    content: "Photograph";
+  }
+  37% {
+    content: "Photographe";
+  }
+  38% {
+    content: "Photographer";
+  }
+  39% {
+    content: "Photographer";
+  }
+  44% {
+    content: "Photographer";
+  }
+  45% {
+    content: "Photographe";
+  }
+  46% {
+    content: "Photograph";
+  }
+  47% {
+    content: "Photograp";
+  }
+  48% {
+    content: "Photogra";
+  }
+  49% {
+    content: "Photogr";
+  }
+  50% {
+    content: "Photog";
+  }
+  51% {
+    content: "Photo";
+  }
+  52% {
+    content: "Phot";
+  }
+  53% {
+    content: "Pho";
+  }
+  54% {
+    content: "Ph";
+  }
+  55% {
+    content: "P";
+  }
+  56% {
+    content: "";
+  }
+  57% {
+    content: "D";
+  }
+  58% {
+    content: "De";
+  }
+  59% {
+    content: "Des";
+  }
+  60% {
+    content: "Desi";
+  }
+  61% {
+    content: "Desig";
+  }
+  62% {
+    content: "Design";
+  }
+  63% {
+    content: "Designe";
+  }
+  64% {
+    content: "Dersigner";
+  }
+  65% {
+    content: "Dersigner";
+  }
+  70% {
+    content: "Dersigner";
+  }
+  71% {
+    content: "Dersigne";
+  }
+  72% {
+    content: "Dersign";
+  }
+  73% {
+    content: "Dersig";
+  }
+  74% {
+    content: "Dersi";
+  }
+  75% {
+    content: "Ders";
+  }
+  76% {
+    content: "Der";
+  }
+  77% {
+    content: "De";
+  }
+  78% {
+    content: "Dev";
+  }
+  79% {
+    content: "Deve";
+  }
+  80% {
+    content: "Devel";
+  }
+  81% {
+    content: "Develo";
+  }
+  82% {
+    content: "Develop";
+  }
+  83% {
+    content: "Develope";
+  }
+  84% {
+    content: "Developer";
+  }
+  85% {
+    content: "Developer";
+  }
+  90% {
+    content: "Developer";
+  }
+  91% {
+    content: "Develope";
+  }
+  92% {
+    content: "Develop";
+  }
+  93% {
+    content: "Develo";
+  }
+  94% {
+    content: "Devel";
+  }
+  95% {
+    content: "Deve";
+  }
+  96% {
+    content: "Dev";
+  }
+  97% {
+    content: "De";
+  }
+  98% {
+    content: "D";
+  }
+  99% {
+    content: "";
+  }
+
+  100% {
+    content: "";
+  }
+}
+
+/*             ***                About Section                ***            */
+#about {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+.aboutRow {
+  -webkit-box-shadow: 0 0 5px rgb(175, 175, 175);
+  box-shadow: 0 0 5px rgb(175, 175, 175);
+}
+.barsCont {
+  height: 10px;
+  border-radius: 0;
+}
+.bars {
+  height: 10px;
+  border-radius: 0;
+  background-color: #0078ff;
+}
+.progressCont {
+  margin-top: 25px;
+}
+
+.mainLargeSeperator {
+  width: 100px;
+  height: 3px;
+  background-color: 0078ff;
+}
+.mainSmallSeperator {
+  width: 40px;
+  height: 5px;
+  background-color: 0078ff;
+}
+.aboutText {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+.skill h6 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-top: 20px;
+}
+.headSpan {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/*             ***                Services Section                ***            */
+#services {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+
+.myCard {
+  border-radius: 1rem;
+}
+.myCard h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+.myIcon {
+  padding: 30px;
+  margin-bottom: 20px;
+  border: 10px solid #0078ff;
+  border-radius: 50%;
+  font-size: 2.5rem;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.myIcon:hover {
+  border-color: #cde1f8;
+  color: #fff;
+  background-color: #0078ff;
+}
+.signalIcon {
+  padding: 30px 25px !important;
+}
+.calendarIcon {
+  padding: 30px 32px;
+}
+.servicesTitle h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/*             ***                Counter Section                ***            */
+#counter {
+  background-image: url(../images/counters-bg.jpg);
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+
+  /* display: flex;
+      justify-content: center;
+      align-items: center; */
+}
+.counterCont {
+  position: relative;
+}
+.mySecondIcon {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.mySecondIcon:after {
+  content: "";
+  position: absolute;
+
+  padding: 35px;
+  border: 10px solid #cde1f8;
+
+  border-radius: 50%;
+}
+
+#counter h5 {
+  font-size: 2rem;
+}
+.coloredBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0078ff;
+  opacity: 0.7;
+}
+
+/*             ***                Work Section                ***       */
+#work {
+  background-color: #f5f5f5;
+}
+.blueWord {
+  color: #0078ff;
+  font-size: 0.75rem;
+}
+.date {
+  font-size: 0.75rem;
+  color: #4e4e4e;
+}
+#work a {
+  text-decoration: none;
+}
+.plusIcon {
+  color: #6ea1ff;
+  font-size: 1.5rem;
+
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.plusIconCont {
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.plusIcon::after {
+  content: "";
+
+  position: absolute;
+  padding: 20px;
+  border-radius: 50%;
+  border: 4px solid #6ea1ff;
+}
+.workImg {
+  overflow: hidden;
+}
+#work .workImg img {
+  -webkit-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
+}
+#work .workImg img:hover {
+  -webkit-transform: scale(130%);
+  -ms-transform: scale(130%);
+  transform: scale(130%);
+}
+/*             ***                Feedback Section                ***            */
+#feedback {
+  background-image: url(../images/overlay-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.feedbackCont {
+  position: relative;
+}
+#feedback h3 {
+  font-size: 1.4rem;
+}
+#feedback p {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.mySlider {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+  background-color: #4e4e4e;
+}
+
+/*             ***                Blog Section                ***            */
+#blog {
+  background-color: #f5f5f5;
+}
+#blog a {
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
+}
+#blog a:hover {
+  color: #0078ff;
+}
+.blogFooterImg img {
+  width: 35px;
+  border-radius: 50%;
+  padding-right: 5px;
+}
+.blogImg {
+  position: relative;
+}
+.imgTitle {
+  content: "TRAVEL";
+  position: absolute;
+  top: 100%;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+  font-size: 0.75rem;
+  font-weight: 500;
+  background-color: #0078ff;
+  color: #fff;
+  padding: 5px 15px;
+}
+.card-footer {
+  font-size: 1.1rem;
+  padding: 10px;
+}
+/*             ***                Contact Section                ***            */
+#contact {
+  background-image: url(../images/overlay-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  padding: 50px 0;
+}
+#contact p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+.contactCont {
+  position: relative;
+}
+.myBtn {
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  margin: 20px 0 0;
+}
+.myBtn:hover {
+  background-color: #3192ff;
+  border: #6ea1ff 4px solid;
+}
+.contactIcon1 {
+  width: 40%;
+  font-size: 1rem;
+}
+.contactIcon {
+  width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  font-size: 1.3rem;
+}
+.myContactIcon {
+  padding: 11px;
+  border: #0078ff 3px solid;
+  border-radius: 50%;
+  -webkit-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
+}
+.myContactIcon:hover {
+  background-color: #0078ff;
+  border: #4c9bf0 4px solid;
+  color: #fff;
+}
+.linkedinIcon {
+  padding: 11px 12px;
+}
+/*             ***                Footer Section                ***            */
+
+footer {
+  background-color: #0062d3;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.footerCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+footer p {
+  text-align: center;
+}
+.DevFolio {
+  font-weight: 700;
+}
